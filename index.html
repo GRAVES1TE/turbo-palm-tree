@@ -1,19 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Выбор адреса постамата</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Выберите адрес постамата</h1>
-  <div id="map"></div>
-  <div id="info">
-    <p><strong>Выбранный адрес:</strong> <span id="selected-address">не выбран</span></p>
-    <button id="confirm-button">Подтвердить адрес</button>
-  </div>
-  <script src="script.js"></script>
+
+<h2 style="text-align:center;">Выберите адрес постамата</h2>
+
+<div id="map"></div>
+
+<div id="controls">
+  <input type="text" id="search" placeholder="Введите адрес..." />
+  <button onclick="findAddress()">Найти</button>
+  <div id="address">Выбранный адрес: не выбран</div>
+  <button onclick="confirmAddress()">Подтвердить адрес</button>
+</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=6aa4fc15-e2f7-432d-8fae-0b623ab2b2af&lang=ru_RU"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
+
