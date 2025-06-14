@@ -1,33 +1,5 @@
-
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 #map {
   width: 100%;
-  height: 70%;
+  height: 400px;
+  margin-bottom: 15px;
 }
-#controls {
-  padding: 15px;
-  text-align: center;
-}
-#search {
-  padding: 8px;
-  width: 70%;
-}
-#address {
-  margin-top: 10px;
-  font-weight: bold;
-}
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
